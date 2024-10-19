@@ -1,0 +1,62 @@
+@mixin m {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.book__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    @include m();
+}
+
+.book__title {
+    width: 531px;
+    color: #000;
+
+    margin-top: 0;
+    margin-bottom: 35px;
+    /* h1 */
+    font-family: "Space Grotesk";
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.book__info {
+    width: 498px;
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 35px;
+    color: #000;
+    font-family: "Space Grotesk";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 140% */
+}
+
+.book__link-box {
+    width: 264px;
+    display: flex;
+    padding: 20px 35px;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    border-radius: 14px;
+    background: var(--Dark, #191a23);
+}
+
+.book__link {
+    color: #fff;
+    text-align: center;
+    font-family: "Space Grotesk";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 140% */
+    text-decoration: none;
+}
